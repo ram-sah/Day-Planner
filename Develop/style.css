@@ -15,10 +15,12 @@ textarea{
 
 .jumbotron {
   text-align: center;
-  background-color: transparent;
+  background-color:lightslategray;
   color: black;
   border-radius: 0;
-  border-bottom: 10px solid black;
+  border-bottom: 5px solid black;
+  padding-top: 2px;
+  
 }
 
 .description{
@@ -68,4 +70,10 @@ textarea{
 .saveBtn i:hover {
   font-size: 20px;
   transition: all .3s ease-in-out;
+}
+#currentDay{
+  padding: 2px;
+  font-size: 20px;
+  color: linen;
+  text-align: center;
 }
