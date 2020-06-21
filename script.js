@@ -16,6 +16,7 @@ $(document).ready(function(){
         nowHour12 = 1;
     }
     let $dateHeading = $('#currentDay');
+    console.log($dateHeading);
     $dateHeading.text(now);
-    console.log(dateHeading);
+    
 });
