@@ -28,7 +28,7 @@ $(document).ready(function () {
         planTextArr = storedValues;
     } else {
         //Helps To remind user that party is important this will show on first time when the app is loaded in the browser
-        planTextArr = new Array(10);
+        planTextArr = new Array(9);
         planTextArr[5] = "Birth Day Party";
         console.log("full array of planed text", planTextArr);
     }
@@ -38,12 +38,12 @@ $(document).ready(function () {
     //clear existing elements
     $plannerDiv.empty();
 
-    console.log("current time", nowHour24);
+    console.log("current time", nowHour12);
 
     //Build calendar using row to fix set of hours
     for (let hour = 1; hour <= 24; hour++) {
         // Index for array to use offset from hour
-        let index = hour - 10;
+        let index = hour - 9;
 
         //Building new row class 
         let $rowDiv = $('<div>');
@@ -65,7 +65,7 @@ $(document).ready(function () {
         let displayHour = 0;
         let ampm = "";
         if (hour > 12) {
-            displayHour = -12;
+            displayHour = hour -12;
             ampm = "pm";            
         } else {
             displayHour = hour;
@@ -103,7 +103,7 @@ $(document).ready(function () {
         let $saveBtn = $('<div>');
         $saveBtn.attr('id', `saveid- ${index}`);
         $saveBtn.attr('save-id', index);
-        $saveBtn.attr('class', "far fa-save saveIcon");
+        $saveBtn.attr('class', "saveIcon");
 
         //append col width and row component to row
         $rowDiv.append($col1SaveDiv);
