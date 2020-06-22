@@ -148,3 +148,38 @@ input {
   border-radius: 15px;
 }
 
+
+/* media query for screen size to be applied to center text to switch at same time as navbar */
+@media (max-width: 768px) {
+   .plannerRow {
+    height: 100%;
+    border-radius: 10;
+    margin: 10px;
+  }
+
+  .saveIcon { border-radius: 0 0 15px 15px; }
+
+  .timeBox { border-radius: 15px 15px 0 0; }
+  padding: 20px;
+}
+
+@media (max-width: 320px) {
+  .plannerRow {
+   height: 100%;
+   border-radius: 10;
+   margin: 10px;
+ }
+ .navbar{
+   margin: 0px;
+   padding: 0px;
+   height:auto;
+ }
+ .subContainer{
+   margin-top: 50px;
+   padding-top: 50px;
+ }
+ .display-3{
+   height:auto;
+   font-size:20px;
+ }
+}
