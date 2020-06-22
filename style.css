@@ -1,9 +1,13 @@
 body {
+  /* image for background */
+  background-image: url('./Assets/background.png');
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
-  line-height: 1;
+  line-height: 1;  
+  -webkit-background-size: cover; 
+  background-repeat: no-repeat ;
+  background-attachment: fixed;
 }
-
 textarea{
   background: transparent;
   border: none;
@@ -20,6 +24,8 @@ textarea{
   border-radius: 0;
   border-bottom: 5px solid black;
   padding-top: 2px;
+  height: 8rem;
+  
   
 }
 
@@ -77,3 +83,9 @@ textarea{
   color: linen;
   text-align: center;
 }
+.display-3 {
+  font-size: 2rem;
+  font-weight: 300;
+  line-height: 1.2;
+}
+  
