@@ -1,14 +1,14 @@
 
-# Homework-5, Day-Planner: 
-* :by Ram Sah
+# Homework-5, Work Day Scheduler: https://ram-sah.github.io/work-day-scheduler
+### :by Ram Sah
 
-# Summary:
+## Summary:
 * HTML and CSS and Javascript documents create a day planner  with an twelve-hours work day
 * The task manager aspect saves entries to local storage
 * This project emphasizes the use of using Javascript to save and retrieve data from local storage
 * This project utilizes the use of moment.js for time calculation and formatting conversion
 
-# This project has the following features:
+## This project has the following features:
 * A header with local time that updates live Seven Input Entries
 * A Save button that saves items to local storage
 * Attribute changes for hour by hour time tracking
@@ -20,7 +20,7 @@
 * Find out of Moment.js needs further installation Start with Document onload
 Look up Javscript Calendar, write steps down and find matching Jquery methods
 Variables unknown until step is complete:
- 
+
 GIVEN I am using a daily planner to create a schedule
 * WHEN I open the planner
 THEN the current day is displayed at the top of the calendar
@@ -37,7 +37,6 @@ THEN the saved events persist
 
 ## Acceptance Criteria
 # This project has script features of:
-
 * Moment.js for local time, current time, and time conversion for individual hours
 * Appended text to HTML for hour time
 * If, if/else statement to compare time with the current time
@@ -48,10 +47,9 @@ THEN the saved events persist
 * Medium devices (tablets, 768px and up) 
 * Large devices (desktops, 992px and up) 
 * Extra large devices (large desktops, 1200px and up)
+### To Execute File: Open in browser
 
-* To Execute File: Open in browser
-
-# Features:
+## Features:
 * Index.html
 * Styles.css
 * script.js
@@ -66,7 +64,7 @@ One Javascript Page
 * Functions 
 * Local Storage set and get
 
-# Code Validation:
+## Code Validation:
 * These use W3C Code Validators for HTML and CSS
    
 
