@@ -1,46 +1,66 @@
-# 05 Third-Party APIs: Work Day Scheduler
 
-Create a simple calendar application that allows the user to save events for each hour of the day. This app will run in the browser and feature dynamically updated HTML and CSS powered by jQuery.
+# Homework-5, Day-Planner: by Ram Sah
+Summary:
+HTML and CSS and Javascript documents create a day planner with an twelve-hours work day
+The task manager aspect saves entries to local storage
+This project emphasizes the use of using Javascript to save and retrieve data from local storage
+This project utilizes the use of moment.js for time calculation and formatting conversion
+This project has the following features:
+A header with local time that updates live Seven Input Entries
+A Save button that saves items to local storage
+Attribute changes for hour by hour time tracking
+Gray is past the current hour
+Yellow is on the current hour
+LightGreen is before the current hour
 
-You'll need to use the [Moment.js](https://momentjs.com/) library to work with date and time. Be sure to read the documentation carefully and concentrate on using Moment.js in the browser.
+Psuedo code:
+Find out of Moment.js needs further installation
+Start with Document onload
+Look up Javscript Calendar, write steps down and find matching Jquery methods
+Variables unknown until step above is complete 
+** Needs start time 
+** Needs end time 
+** Needs current time
+** Needs to compare each hour to current time, and determine if it is 
+** Current time is always going to be more than start time 
+** Current time is always going to be less than end time 
+** Difference between the two 
+** For loop for starting time, it would only be able to loop up to the ending time, then what? 
+** How can we use moment duration to compare time?
 
-## User Story
+This project has script features of:
+Moment.js for local time, current time, and time conversion for individual hours
+Appended text to HTML for hour time
+If, if/else statement to compare time with the current time
+Appended attributes for color current time
+An event listener for the save buttons to save to local storage
+This project features responsive design using a Bootstrap layout
+Has responsive layout for:
+** Small devices (landscape phones, 576px and up) 
+** Medium devices (tablets, 768px and up) 
+** Large devices (desktops, 992px and up) 
+** Extra large devices (large desktops, 1200px and up)
 
-```
-AS AN employee with a busy schedule
-I WANT to add important events to a daily planner
-SO THAT I can manage my time effectively
-```
+To Execute File:
+Open in browser
 
-## Acceptance Criteria
+Features:
+One HTML Pages
+Index.html
+Contains 12 inputs for an 12-hour work day
+One CSS Page
+Styles.css
+Contains styling for changing attributes and buttons
+One Javascript Page 
+* Contains: 
+* Variables, including arrays and time conversion 
+* Event listeners 
+* if/else if statements 
+* For Loops 
+* Functions 
+* Local Storage set and get
 
-```
-GIVEN I am using a daily planner to create a schedule
-WHEN I open the planner
-THEN the current day is displayed at the top of the calendar
-WHEN I scroll down
-THEN I am presented with timeblocks for standard business hours
-WHEN I view the timeblocks for that day
-THEN each timeblock is color coded to indicate whether it is in the past, present, or future
-WHEN I click into a timeblock
-THEN I can enter an event
-WHEN I click the save button for that timeblock
-THEN the text for that event is saved in local storage
-WHEN I refresh the page
-THEN the saved events persist
-```
+Code Validation:
+* These use W3C Code Validators for HTML and CSS
+   
 
-The following animation demonstrates the application functionality:
-
-![day planner demo](./Assets/05-third-party-apis-homework-demo.gif)
-
-## Review
-
-You are required to submit the following for review:
-
-* The URL of the deployed application.
-
-* The URL of the GitHub repository. Give the repository a unique name and include a README describing the project.
-
-- - -
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.

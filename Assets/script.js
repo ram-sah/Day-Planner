@@ -28,7 +28,7 @@ $(document).ready(function () {
         planTextArr = storedValues;
     } else {
         //Helps To remind user that party is important this will show on first time when the app is loaded in the browser
-        planTextArr = new Array(9);
+        planTextArr = new Array(7);
         planTextArr[5] = "Birth Day Party";
         console.log("full array of planed text", planTextArr);
     }
@@ -41,9 +41,9 @@ $(document).ready(function () {
     console.log("current time", nowHour12);
 
     //Build calendar using row to fix set of hours
-    for (let hour = 1; hour <= 24; hour++) {
+    for (let hour = 1; hour <= 12; hour++) {
         // Index for array to use offset from hour
-        let index = hour - 9;
+        let index = hour - 7;
 
         //Building new row class 
         let $rowDiv = $('<div>');
