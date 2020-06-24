@@ -99,11 +99,13 @@ $(document).ready(function () {
         // start building save portion of row
         let $col1SaveDiv = $('<div>');
         $col1SaveDiv.addClass('col-md-1');
-
         let $saveBtn = $('<div>');
         $saveBtn.attr('id', `saveid- ${index}`);
         $saveBtn.attr('save-id', index);
-        $saveBtn.attr('class', "saveIcon");
+        $saveBtn.addClass("saveBtn");
+
+        var saveIcon = $("<i class='material-icons'>save</i>");
+        $saveBtn.append(saveIcon);
 
         //append col width and row component to row
         $rowDiv.append($col1SaveDiv);
