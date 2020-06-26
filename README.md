@@ -1,6 +1,6 @@
 
 # Homework-5, Day-Planner: 
-* by Ram Sah
+* By Ram Sah : https://ram-sah.github.io/day-planner
 
 # Summary:
 * HTML and CSS and Javascript documents create a day planner  with an twelve-hours work day (6:00 am to 6:00pm)
