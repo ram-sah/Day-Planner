@@ -20,7 +20,7 @@ $(document).ready(function () {
     $dateHeading.text(now);
 
     //store a key/value in localStorage using JSON.parse
-    let storedValues = JSON.parse(localStorage.getItem("storedPlan"));
+    let storedValues = JSON.parse(localStorage.getItem("storedPlans"));
     console.log(storedValues);
 
     //If plans were retrive from localStore, update the plan array key/value in it.
@@ -28,9 +28,9 @@ $(document).ready(function () {
         planTextArr = storedValues;
     } else {
         //Helps To remind user that party is important this will show on first time when the app is loaded in the browser
-        planTextArr = new Array(7);
-        planTextArr[5] = "Birth Day Party";
-        console.log("full array of planed text", planTextArr);
+        planTextArr1 = new Array(12);
+        planTextArr1[12] = "Dinner time with family";
+        console.log("full array of planed text", planTextArr1);
     }
 
     //Set variable referencing planner element 
@@ -40,10 +40,10 @@ $(document).ready(function () {
 
     console.log("current time", nowHour12);
 
-    //Build calendar using row to fix set of hours
-    for (let hour = 1; hour <= 12; hour++) {
-        // Index for array to use offset from hour
-        let index = hour - 7;
+    //Build calendar using row to fix set of hours (6am to 6pm)
+    for (let hour = 6; hour <= 24; hour++) {
+        // Index for array to use offset from hour 
+        let index = hour - 6;
 
         //Building new row class 
         let $rowDiv = $('<div>');
@@ -65,22 +65,22 @@ $(document).ready(function () {
         let displayHour = 0;
         let ampm = "";
         if (hour > 12) {
-            displayHour = hour -12;
-            ampm = "pm";            
+            displayHour = hour - 12;
+            ampm = "pm";
         } else {
             displayHour = hour;
             ampm = "am";
         }
         //Display time on timebox
         $timeBoxSpn.text(`${displayHour} ${ampm}`);
-        
+
         //add col on timeBox 
         $rowDiv.append($col2TimeDiv);
         $col2TimeDiv.append($timeBoxSpn);
 
         //start building input portion of row
         let $dailyPlanSpn = $('<input>');
-        $dailyPlanSpn.attr('id', `input-${index}`);
+        $dailyPlanSpn.attr('id', `input${index}`);
         $dailyPlanSpn.attr('hour-index', index);
         $dailyPlanSpn.attr('type', 'text');
         $dailyPlanSpn.attr('class', 'dailyPlan');
@@ -100,7 +100,7 @@ $(document).ready(function () {
         let $col1SaveDiv = $('<div>');
         $col1SaveDiv.addClass('col-md-1');
         let $saveBtn = $('<div>');
-        $saveBtn.attr('id', `saveid- ${index}`);
+        $saveBtn.attr('id', `saveid ${index}`);
         $saveBtn.attr('save-id', index);
         $saveBtn.addClass("saveBtn");
 
@@ -116,21 +116,30 @@ $(document).ready(function () {
 
         //add row to planner container  
         $plannerDiv.append($rowDiv);
-    };
+    }
 
     //use function to update row color
-    function updateRowColor ($hourRow, hour) {
-       
+    function updateRowColor($hourRow, hour) {
+
         if (hour < nowHour24) {
-            
+
             $hourRow.css("background-color", "lightgrey")
         } else if (hour > nowHour24) {
-           $hourRow.css("background-color", "lightgreen")
+            $hourRow.css("background-color", "lightgreen")
         } else {
-            $hourRow.css("background-color","yellow" )
+            $hourRow.css("background-color", "yellow")
         }
     };
 
+    //On click function to save user input on local storage
 
-
+    $(document).on("click", ".saveBtn", function (event){
+        event.preventDefault();
+        console.log();
+        var storedPlans = $.map($(".dailyPlan"), function(plan){
+            return plan.value;
+        });
+        localStorage.setItem("storedPlans", JSON.stringify(storedPlans));
+        
+    });
 });

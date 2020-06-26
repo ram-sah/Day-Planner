@@ -1,4 +1,4 @@
-
+/* Header styles */
 .header-text {
   /* forces text across the entire screen so it has a center */
   width: 100%;
@@ -6,10 +6,10 @@
   font-size: 10px;
   color:greenyellow 
 }
-
+/* body styles */
 body {
   /* image for background */
-  background-image: url('./Assets/background.png');
+  background-image: url('./background.png');
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
   line-height: 1;  
@@ -45,37 +45,24 @@ body {
   display: inline-block;
   font-size: 1em;
 }
-
+/* 3 different Columns of schedular box  */
 .col-md-1, .col-md-2, .col-md-9 {
   padding: 0;
 }
+/* Text Row  */
 .row {
   white-space: pre-wrap;
   height: 80px;
   border-top: 1px solid white;;
 }
-
+/* Display hours  */
 .hour {
   background-color: #ffffff;
   color: #000000;
   border-top: 1px dashed #000000;
 }
 
-.past {
-  background-color: #d3d3d3;
-  color: white;
-}
-
-.present {
-  background-color: #ff6961;
-  color: white;
-}
-
-.future {
-  background-color: #77dd77;
-  color: white;
-}
-
+/* save button index */
 .saveBtn {
   border-left: 1px solid black;
   border-top-right-radius: 15px;
@@ -84,17 +71,19 @@ body {
   color: white;
   text-align: center;
 }
-
+/* save button hover over  */
 .saveBtn i:hover {
   font-size: 20px;
   transition: all .3s ease-in-out;
 }
+/* Current Day Schedular ID */
 #currentDay{
   padding: 2px;
   font-size: 20px;
   color: linen;
   text-align: center;
 }
+/* Display class from index file */
 .display-3 {
   font-size:3rem;  
   line-height: 1.2;
@@ -110,12 +99,14 @@ body {
   border-top-width: 8px;
   text-align: center;
 }
+/* fooetr text styles */
 .footer-text{
   width: 100%;
   text-align: center;
   font-size: 17px;
   color:white;
 }
+/* Save button icon  */
 .material-icons{  
   color: green;
   border-radius: 0px 15px 15px 0px;
@@ -124,13 +115,14 @@ body {
   height: 20px;
   text-align: center;
 }
-
+/* Daily Plan text input area */
 .dailyPlan {
   color: black;
   font-size: 12pt;
   height: 100%;
   width: 100%;
 }
+/* Text Input  */
 input {
   background: transparent;
   border: none;
@@ -139,6 +131,7 @@ input {
 .col-md-1, .col-md-2, .col-md-9 {
   padding: 0;
 }
+/* Input text Planner Row  */
 .plannerRow {
   height: 50px;
   margin-top: 2px;
@@ -149,8 +142,8 @@ input {
 }
 
 
-/* media query for screen size to be applied to center text to switch at same time as navbar */
-@media only screen and (max-width:800px) {
+/*Large devices (desktops, 992px and up) */
+@media only screen and (max-width:992px) {
    .plannerRow {
     height: 100%;
     border-radius: 10;
@@ -167,13 +160,8 @@ input {
     color: #000000;   
   }  
 }
-
-@media only screen and (max-width:510px) {
-  .plannerRow {
-   height: 100%;
-   border-radius: 10;
-   margin: 10px;
- }
+/*Small devices (landscape phones, 576px and up)*/
+@media only screen and (max-width:576px) { 
  .navbar{
    margin: 0px;
    padding: 0px;
