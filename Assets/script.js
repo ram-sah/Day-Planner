@@ -29,7 +29,7 @@ $(document).ready(function () {
     } else {
         //Helps To remind user that party is important this will show on first time when the app is loaded in the browser
         planTextArr = new Array(12);
-        planTextArr[2] = "Dinner time with family";
+        planTextArr[2] = "Breakfast time with family";
         console.log("full array of planed text", planTextArr);
     }
 
