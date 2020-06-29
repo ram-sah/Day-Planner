@@ -67,8 +67,9 @@ One Javascript Page
 * For Loops 
 * Functions 
 * Local Storage set and get
+![WorkDay Scheduler](https://user-images.githubusercontent.com/64625123/86008461-d4add480-b9e6-11ea-9110-230b0d435fe6.gif)
 
-Code Validation:
+## Code Validation:
 * These use W3C Code Validators for HTML and CSS
 * esprima Syntax Validator 
    
