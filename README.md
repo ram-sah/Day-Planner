@@ -1,6 +1,6 @@
 
 # Homework-5, Day-Planner: 
-* By Ram Sah : https://ram-sah.github.io/day-planner
+* By Ram Sah: https://ram-sah.github.io/Day-Planner/
 
 # Summary:
 * HTML and CSS and Javascript documents create a day planner  with an twelve-hours work day (6:00 am to 6:00pm)
@@ -67,8 +67,9 @@ One Javascript Page
 * For Loops 
 * Functions 
 * Local Storage set and get
+![WorkDay Scheduler](https://user-images.githubusercontent.com/64625123/86008461-d4add480-b9e6-11ea-9110-230b0d435fe6.gif)
 
-Code Validation:
+## Code Validation:
 * These use W3C Code Validators for HTML and CSS
 * esprima Syntax Validator 
 * ![05-third-party-apis-homework-demo](https://user-images.githubusercontent.com/64625123/87863736-7791a880-c92c-11ea-988a-5737fb8bf89e.gif)
