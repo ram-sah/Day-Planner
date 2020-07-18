@@ -7,7 +7,7 @@ $(document).ready(function () {
     const now = moment().format('MMMM Do YYYY || h:mm a');
 
     //declearing for test in non-standard hrs
-    let nowHour24 = moment().format('H');
+    let nowHour24 = moment().format('H');// "H"for 24 hrs formate
     let nowHour12 = moment().format('h');
 
     //setting time for testing after hours
@@ -84,6 +84,7 @@ $(document).ready(function () {
         $dailyPlanSpn.attr('hour-index', index);
         $dailyPlanSpn.attr('type', 'text');
         $dailyPlanSpn.attr('class', 'dailyPlan');
+        $dailyPlanSpn.attr('placeholder',"Add your event here..."); //Add your event here box 
 
         //access index from data array for hour
         $dailyPlanSpn.val(planTextArr[index]);
