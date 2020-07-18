@@ -84,7 +84,8 @@ $(document).ready(function () {
         $dailyPlanSpn.attr('hour-index', index);
         $dailyPlanSpn.attr('type', 'text');
         $dailyPlanSpn.attr('class', 'dailyPlan');
-        $dailyPlanSpn.attr('placeholder',"Add your event here..."); //Add your event here box 
+        //Add your event here box
+        $dailyPlanSpn.attr('placeholder', "Add your event here...");
 
         //access index from data array for hour
         $dailyPlanSpn.val(planTextArr[index]);
@@ -134,13 +135,13 @@ $(document).ready(function () {
 
     //On click function to save user input on local storage
 
-    $(document).on("click", ".saveBtn", function (event){
+    $(document).on("click", ".saveBtn", function (event) {
         event.preventDefault();
         console.log();
-        var storedPlans = $.map($(".dailyPlan"), function(plan){
+        var storedPlans = $.map($(".dailyPlan"), function (plan) {
             return plan.value;
         });
         localStorage.setItem("storedPlans", JSON.stringify(storedPlans));
-        
+
     });
 });
