@@ -1,5 +1,5 @@
 
-# Homework-5, Day-Planner: 
+# Day-Planner: 
 * By Ram Sah: https://ram-sah.github.io/Day-Planner/
 
 # Summary:
